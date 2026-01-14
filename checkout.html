@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Оформление заказа - Стальпром</title>
+
+	<meta name="description" content="Оформление заказа в Стальпром - нейтральное оборудование из нержавеющей стали">
+
+	<link rel="stylesheet" href="./css/checkout.min.css?_v=20260114202553">
+
+</head>
+<body id="Оформление-заказа" data-page="checkout">
+
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__top">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__column">
+					<a href="index.html" class="header__logo header__logo--mob">
+						<img src="./../assets/vector/logo-white.svg" alt="Стальпром логотип">
+					</a>
+				</div>
+				<div class="header__column mob-hide">
+					<a href="#" class="header__contacts">
+						<img class="header__contacts-icon" src="./../assets/vector/mark.svg" alt="город">
+						<span class="header__contacts-text">Москва</span>
+					</a>
+					<a href="tel:+79185443135" class="header__contacts">
+						<img class="header__contacts-icon" src="./../assets/vector/phone.svg" alt="телефон Стальпром">
+						<span class="header__contacts-text">+7 (918) 544-31-35</span>
+					</a>
+					<a href="mailto:andreisheludko03@gmail.com" class="header__contacts">
+						<img class="header__contacts-icon" src="./../assets/vector/mail.svg" alt="почта Стальпром">
+						<span class="header__contacts-text">andreisheludko03@gmail.com</span>
+					</a>
+				</div>
+				<div class="header__column mob-hide">
+					<nav class="header__nav">
+						<a href="about.html" class="header__nav-link" data-nav="about">О нас</a>
+						<a href="delivery.html" class="header__nav-link" data-nav="delivery">Доставка и оплата</a>
+						<a href="portfolio.html" class="header__nav-link" data-nav="portfolio">Наши работы</a>
+						<a href="contacts.html" class="header__nav-link" data-nav="contacts">Контакты</a>
+					</nav>
+				</div>
+				<div class="header__column mob-hide">
+					<button class="header__contacts btn-callback" data-popup="callback">
+						<img class="header__contacts-icon" src="./../assets/vector/phone.svg" alt="обратный звонок, Стальпром">
+						<span class="header__contacts-text">Заказать звонок</span>
+					</button>
+				</div>
+				<div class="header__column">
+					<button class="mob-menu-btn">
+						<div class="burger-btn"><span></span></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom header__bottom--main">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__column">
+					<a href="index.html" class="header__logo">
+						<img src="./../assets/vector/logo-main.svg" alt="Стальпром логотип">
+					</a>
+				</div>
+				<div class="header__column">
+					<form action="#" class="form-search">
+						<div class="form-search__field form-search__field--main">
+							<a href="./catalog.html" class="btn btn-main">
+								<img src="./../assets/vector/burger.svg" alt="каталог">
+								<span>Каталог</span>
+							</a>
+							<input type="text" id="search-input" placeholder="Поиск по сайту">
+							<button type="submit" class="btn btn-main form-search__btn">
+								<svg width="16" height="16" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.5 12.5L18.5 18.5M7.5 14.5C3.63401 14.5 0.5 11.366 0.5 7.5C0.5 3.63401 3.63401 0.5 7.5 0.5C11.366 0.5 14.5 3.63401 14.5 7.5C14.5 11.366 11.366 14.5 7.5 14.5Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>Искать</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="header__column header__column--modify">
+					<div class="header__column-mod">
+						<div class="header__dropdown-content">
+							<a href="./wishlist.html" class="header__column--mod-link header__favor">
+								<span class="favor favor--main hide-title">Избранное</span>
+								<span class="btn-round btn-cart btn-cart--main">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.75122 7.75258C1.51628 7.53531 1.6439 7.14254 1.96167 7.10487L6.46436 6.5708C6.59387 6.55544 6.70636 6.47411 6.76099 6.35569L8.66016 2.23835C8.79419 1.94777 9.20728 1.94771 9.34131 2.23829L11.2405 6.3556C11.2951 6.47403 11.4069 6.55558 11.5364 6.57093L16.0393 7.10487C16.3571 7.14254 16.4843 7.53543 16.2494 7.75269L12.9208 10.8314C12.8251 10.92 12.7824 11.0518 12.8079 11.1797L13.6913 15.627C13.7536 15.9408 13.4196 16.184 13.1404 16.0277L9.18386 13.8125C9.07006 13.7488 8.9318 13.7491 8.818 13.8128L4.86108 16.0271C4.58185 16.1834 4.24721 15.9408 4.30957 15.627L5.19311 11.18C5.21852 11.0521 5.176 10.92 5.08025 10.8314L1.75122 7.75258Z"
+											stroke="#1A60B0" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+									<span class="btn-cart__count">1</span>
+								</span>
+							</a>
+							<a href="./cart.html" class="header__column--mod-link header__cart">
+								<span class="header__cart-summa">
+									<span class="digit">140 000</span>
+									<span class="valuta">₽</span>
+								</span>
+								<span class="btn-round btn-cart btn-cart--main">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6 6H5.08301C4.10829 6 3.62134 6 3.27466 6.19886C2.97043 6.37336 2.73658 6.64901 2.61446 6.97778C2.47539 7.3522 2.55544 7.8325 2.71549 8.79275L2.71582 8.79456L3.41582 12.9946C3.53457 13.707 3.59433 14.0634 3.7721 14.3307C3.92881 14.5664 4.14878 14.7527 4.40698 14.8685C4.6999 14.9999 5.0609 15 5.7832 15H12.217C12.9393 15 13.3001 14.9999 13.593 14.8685C13.8512 14.7527 14.0713 14.5664 14.228 14.3307C14.4058 14.0634 14.4652 13.707 14.584 12.9946L15.284 8.79456L15.2847 8.79163C15.4446 7.83212 15.5246 7.35206 15.3856 6.97778C15.2635 6.64901 15.0302 6.37336 14.7259 6.19886C14.3793 6 13.8915 6 12.9168 6H12M6 6H12M6 6C6 4.34315 7.34315 3 9 3C10.6569 3 12 4.34315 12 6"
+											stroke="#1A60B0" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+									<span class="btn-cart__count">1</span>
+								</span>
+							</a>
+						</div>
+						<a href="./account.html" class="header__column--mod-link header__user accordion-trigger">
+							<span class="user hide-title">Вход</span>
+							<span class="btn-round btn-cart btn-cart--main">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15 15.75C15 13.6789 12.3137 12 9 12C5.68629 12 3 13.6789 3 15.75M9 9.75C6.92893 9.75 5.25 8.07107 5.25 6C5.25 3.92893 6.92893 2.25 9 2.25C11.0711 2.25 12.75 3.92893 12.75 6C12.75 8.07107 11.0711 9.75 9 9.75Z"
+										stroke="#1A60B0" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="main">
+			<div class="page-header">
+				<div class="container">
+					<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="https://ваш-сайт.ру/">
+								<span itemprop="name">Главная</span>
+							</a>
+							<meta itemprop="position" content="1" />
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="https://ваш-сайт.ру/checkout/">
+								<span itemprop="name">Оформление заказа</span>
+							</a>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+					<h1>Оформление заказа</h1>
+				</div>
+			</div>
+			<section class="section-checkout">
+				<div class="container">
+					<div class="section-checkout__wrapper">
+						<div class="section-checkout__content">
+							<div class="checkout-form">
+	<h2 class="checkout-form__title">1. Информация о покупателе</h2>
+	<div class="checkout-form__wrapper">
+		<!-- Вкладки -->
+		<div class="tabs" role="tablist">
+			<button type="button" class="btn btn-white tab tab--active" data-tab="individual" role="tab"
+				aria-selected="true">
+				Физическое лицо
+			</button>
+			<button type="button" class="btn btn-white tab" data-tab="legal" role="tab" aria-selected="false">
+				Юридическое лицо
+			</button>
+		</div>
+	
+		<!-- Контент табов -->
+		<div class="tab-content" data-content="individual" role="tabpanel" aria-hidden="false">
+			<form class="checkout-form__form">
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="usersurname" id="usersurname" placeholder=" " required>
+						<label for="usersurname" class="checkout-form__form-label">Ваша Фамилия</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="username" id="username" placeholder=" " required>
+						<label for="username" class="checkout-form__form-label">Ваше Имя</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="userpatronymic" id="userpatronymic" placeholder=" " required>
+						<label for="userpatronymic" class="checkout-form__form-label">Ваше Отчество</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="tel" name="userphone" id="userphone" placeholder=" " required>
+						<label for="userphone" class="checkout-form__form-label">Ваш телефон</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="email" name="usermail" id="usermail" placeholder=" " required>
+						<label for="usermail" class="checkout-form__form-label">Ваш email</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group checkout-form__field-group--full-width">
+					<div class="checkout-form__field">
+						<textarea name="usermessage" id="usermessage" placeholder=" " rows="2"></textarea>
+						<label for="usermessage" class="checkout-form__form-label">Краткое описание задачи</label>
+					</div>
+					
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<button type="button" class="btn btn-main checkout-form__btn">Далее</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	
+		<div class="tab-content checkout-form__content" data-content="legal" role="tabpanel" aria-hidden="true" hidden>
+			<form class="checkout-form__form">
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="legalinn" id="legalinn" placeholder=" " required>
+						<label for="legalinn" class="checkout-form__form-label">ИНН</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="legalname" id="legalname" placeholder=" " required>
+						<label for="legalname" class="checkout-form__form-label">Название компании</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="legaladdress" id="legaladdress" placeholder=" " required>
+						<label for="legaladdress" class="checkout-form__form-label">Юридический адрес</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="legalkpp" id="legalkpp" placeholder=" " required>
+						<label for="legalkpp" class="checkout-form__form-label">КПП</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="legalcontactsurname" id="legalcontactsurname" placeholder=" " required>
+						<label for="legalcontactsurname" class="checkout-form__form-label">Фамилия контактного лица</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="legalcontactname" id="legalcontactname" placeholder=" " required>
+						<label for="legalcontactname" class="checkout-form__form-label">Имя контактного лица</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="legalcontactpatronymic" id="legalcontactpatronymic" placeholder=" " required>
+						<label for="legalcontactpatronymic" class="checkout-form__form-label">Отчество контактного лица</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="tel" name="legalcontactphone" id="legalcontactphone" placeholder=" " required>
+						<label for="legalcontactphone" class="checkout-form__form-label">Телефон контактного лица</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="email" name="legalcontactmail" id="legalcontactmail" placeholder=" " required>
+						<label for="legalcontactmail" class="checkout-form__form-label">Email контактного лица</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group checkout-form__field-group--full-width">
+					<div class="checkout-form__field">
+						<textarea name="legalmessage" id="legalmessage" placeholder=" " rows="2"></textarea>
+						<label for="legalmessage" class="checkout-form__form-label">Краткое описание задачи</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<button type="button" class="btn btn-main checkout-form__btn">Далее</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="checkout-form no-active">
+	<h2 class="checkout-form__title">2. Способ и адрес доставки</h2>
+	<div class="checkout-form__wrapper">
+		<!-- Вкладки -->
+		<div class="tabs" role="tablist">
+			<button type="button" class="btn btn-white tab tab--active" data-tab="pickup-delivery"
+				role="tab" aria-selected="true">
+				Самовывоз
+			</button>
+			<button type="button" class="btn btn-white tab" data-tab="calculation-delivery" role="tab" aria-selected="false">
+				Расчет доставки менеджером
+			</button>
+		</div>
+
+		<!-- Контент табов -->
+		<div class="tab-content" data-content="pickup-delivery" role="tabpanel" aria-hidden="false">
+			<form class="checkout-form__form">
+				<div class="checkout-form__field-group checkout-form__field-group--full-width">
+					<div class="checkout-form__field">
+						<input type="text" name="userpickup" id="usersurname" placeholder="Вы можете самостоятельно забрать заказ из нашего магазина" readonly style="font-size:1.25rem;background-color: greenyellow;">
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<button type="button" class="btn btn-main checkout-form__btn">Далее</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="tab-content" data-content="calculation-delivery" role="tabpanel" aria-hidden="true" hidden>
+			<form class="checkout-form__form">
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="deliveryregion" id="deliveryregion" placeholder=" " required>
+						<label for="deliveryregion" class="checkout-form__form-label">Регион / Субъект РФ</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="deliverycity" id="deliverycity" placeholder=" " required>
+						<label for="deliverycity" class="checkout-form__form-label">Город / Населённый пункт</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="deliverystreet" id="deliverystreet" placeholder=" " required>
+						<label for="deliverystreet" class="checkout-form__form-label">Улица</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<input type="text" name="deliveryhouse" id="deliveryhouse" placeholder=" " required>
+						<label for="deliveryhouse" class="checkout-form__form-label">Номер дома</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" name="deliveryapartment" id="deliveryapartment" placeholder=" " required>
+						<label for="deliveryapartment" class="checkout-form__form-label">Квартира / офис</label>
+					</div>
+					<div class="checkout-form__field">
+						<input type="text" inputmode="numeric" name="deliverypostal" id="deliverypostal" placeholder=" " required>
+						<label for="deliverypostal" class="checkout-form__form-label">Почтовый индекс</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group checkout-form__field-group--full-width">
+					<div class="checkout-form__field">
+						<textarea name="deliveryinfo" id="deliveryinfo" placeholder=" " rows="2"></textarea>
+						<label for="deliveryinfo" class="checkout-form__form-label">Дополнительная информация</label>
+					</div>
+				</div>
+				<div class="checkout-form__field-group">
+					<div class="checkout-form__field">
+						<button type="button" class="btn btn-main checkout-form__btn">Далее</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="checkout-form no-active">
+	<h2 class="checkout-form__title">3. Способ оплаты</h2>
+	<div class="checkout-form__wrapper">
+		<!-- Вкладки -->
+		<div class="tabs" role="tablist">
+			<button type="button" class="btn btn-white tab tab--active"
+				data-tab="sbp" role="tab" aria-selected="true">
+				Платеж через СБП (по QR-коду)
+			</button>
+			<button type="button" class="btn btn-white tab" data-tab="online-payment" role="tab"
+				aria-selected="false">
+				Онлайн&nbsp;оплата картой
+			</button>
+			<button type="button" class="btn btn-white tab" data-tab="yandex"
+				role="tab" aria-selected="true">
+				Яндекс Сплит и Пэй
+			</button>
+			<button type="button" class="btn btn-white tab" data-tab="manager" role="tab"
+				aria-selected="false">
+				Согласовать с менеджером
+			</button>
+		</div>
+
+		<!-- Контент табов -->
+		<div class="tab-content" data-content="sbp" role="tabpanel" aria-hidden="false">
+			<p>
+				Система быстрых платежей — это сервис Банка России, позволяющий физическим лицам совершать мгновенные переводы по номеру
+				мобильного телефона в любой банк — участник СБП, а также производить оплату товаров и услуг в розничных магазинах и сети
+				интернет по QR-коду.
+			</p>
+			<p>
+				В настоящий момент участниками СБП являются 221 банк. Перечень банков-участников, присоединившихся к системе, представлен в разделе <a href="https://sbp.nspk.ru/participants/" title="«Банки-участники»" target="_blank" rel="nofollow, noindex">«Банки-участники»</a>.
+			</p>
+		</div>
+
+		<div class="tab-content" data-content="online-payment" role="tabpanel" aria-hidden="true" hidden>
+			<p>
+				Оплата банковской картой на сайте. Принимаются карты следующих платёжных систем: «VISA», «MasterCard», «МИР».
+			</p>
+		</div>
+
+		<div class="tab-content" data-content="yandex" role="tabpanel" aria-hidden="true" hidden>
+			<p>
+				Оплата с помощью сервисов Яндекс: «Яндекс Пэй» — быстрая и безопасная оплата одной кнопкой, а также «Яндекс Сплит» — возможность разделить стоимость покупки на несколько беспроцентных платежей.
+			</p>
+			<p>
+				Для использования достаточно аккаунта в Яндексе и привязанной банковской карты.
+			</p>
+		</div>
+
+		<div class="tab-content" data-content="manager" role="tabpanel" aria-hidden="true" hidden>
+			<p>
+				Менеджер свяжется с вами для уточнения способа оплаты и актуальной стоимости товара.
+			</p>
+		</div>
+	</div>
+</div>
+							
+						</div>
+						<aside class="section-checkout__sidebar">
+							<div class="checkout-sidebar">
+								<span class="checkout-sidebar__title">Ваш заказ</span>
+								<dl class="checkout-sidebar__row">
+									<dt class="checkout-sidebar__key">Товаров (<span id="total-quantity">3</span>): </span>
+									<dd class="checkout-sidebar__value" data-total-price>61 500,00</dd>
+								</dl>
+								<dl class="checkout-sidebar__row">
+									<dt class="checkout-sidebar__key">НДС (5%, включен в цену): </dt>
+									<dd class="checkout-sidebar__value" data-total-tax>3 075,00 </dd>
+								</dl>
+								<span class="checkout-sidebar__title">Итого:</span>
+								<span class="checkout-sidebar__amount" data-total-amount>61 500,00</span>
+
+								<div class="checkbox">
+									<div class="checkbox__wrapper">
+										<input type="checkbox" id="user-agreement" name="user-agreement" required checked />
+										<label class="checkbox__label" for="user-agreement">
+											Я согласен на
+											<a href="./licenses_detail.html" target="_blank">
+												обработку персональных данных
+											</a>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="btn btn-main" data-save-button="true" disabled>Оформить заказ</button>
+
+								<div class="checkout-guarantees">
+									<div class="checkout-guarantees__item">
+										<span class="icon">
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.69434 15.4735C11.274 14.7585 15 12.55 15 7.62379V4.64768C15 3.80925 15 3.3894 14.8367 3.06885C14.6929 2.7866 14.4628 2.5573 14.1805 2.41349C13.8597 2.25 13.4402 2.25 12.6001 2.25H5.40015C4.56007 2.25 4.13972 2.25 3.81885 2.41349C3.5366 2.5573 3.3073 2.7866 3.16349 3.06885C3 3.38972 3 3.81007 3 4.65015V7.62378C3 12.55 6.72585 14.7586 8.30546 15.4735C8.47292 15.5493 8.55707 15.5872 8.7466 15.6197C8.86616 15.6402 9.1346 15.6402 9.25415 15.6197C9.44303 15.5873 9.5263 15.5496 9.69261 15.4743L9.69434 15.4735Z"
+													fill="#B0271A" />
+											</svg>
+										</span>
+										<strong>Безопасная оплата</strong>
+										<p>Ваши платежи под надежной защитой</p>
+									</div>
+									<div class="checkout-guarantees__item">
+										<span class="icon">
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2.25 8.25V11.8501C2.25 12.6902 2.25 13.11 2.41349 13.4309C2.5573 13.7132 2.7866 13.9429 3.06885 14.0867C3.3894 14.25 3.80925 14.25 4.64768 14.25H13.3523C14.1908 14.25 14.61 14.25 14.9305 14.0867C15.2128 13.9429 15.4429 13.7132 15.5867 13.4309C15.75 13.1104 15.75 12.6911 15.75 11.8527V8.25M2.25 8.25V6.75M2.25 8.25H15.75M2.25 6.75V6.15015C2.25 5.31007 2.25 4.88972 2.41349 4.56885C2.5573 4.2866 2.7866 4.0573 3.06885 3.91349C3.38972 3.75 3.81007 3.75 4.65015 3.75H13.3501C14.1902 3.75 14.6097 3.75 14.9305 3.91349C15.2128 4.0573 15.4429 4.2866 15.5867 4.56885C15.75 4.8894 15.75 5.30925 15.75 6.14768V6.75M2.25 6.75H15.75M5.25 11.25H8.25M15.75 8.25V6.75"
+													stroke="#B0271A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+										<strong>Легкий возврат</strong>
+										<p>Условия прозрачны — деньги вернём в срок.</p>
+									</div>
+									<div class="checkout-guarantees__item">
+										<span class="icon">
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.12685 3.19291C6.89905 2.62343 6.34749 2.25 5.73413 2.25H3.67105C2.88623 2.25 2.25 2.88607 2.25 3.6709C2.25 10.3419 7.65808 15.75 14.3291 15.75C15.1139 15.75 15.75 15.1137 15.75 14.3289L15.7503 12.2655C15.7503 11.6521 15.377 11.1006 14.8075 10.8728L12.8302 10.0822C12.3186 9.87758 11.7362 9.96967 11.313 10.3224L10.8026 10.748C10.2066 11.2447 9.32972 11.2052 8.78115 10.6566L7.34417 9.21829C6.79559 8.66972 6.75505 7.7935 7.25171 7.19751L7.67725 6.68722C8.02996 6.26397 8.12287 5.68137 7.91825 5.16982L7.12685 3.19291Z"
+													fill="#B0271A" />
+											</svg>
+										</span>
+										<strong>Нужна помощь?</strong>
+										<p>+7 (918) 544-31-35</p>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		<section class="section-form">
+	<div class="container">
+		<div class="section-form__wrapper">
+			<h2 class="section-title section-form__title">
+				Получите бесплатную консультацию
+			</h2>
+			<p class="section-form__subtitle">
+				Наш специалист свяжется с вами в течение 15 минут, ответит на все вопросы и поможет подобрать оборудование под ваши
+				задачи.
+			</p>
+			<form action="#" class="section-form__form">
+				<div class="form-group">
+					<input type="text" id="name" name="name" placeholder=" " required>
+					<label for="name" class="form-label">Ваше имя*</label>
+				</div>
+			
+				<div class="form-group">
+					<input type="tel" id="phone" name="phone" placeholder=" " required>
+					<label for="phone" class="form-label">Ваш телефон*</label>
+				</div>
+			
+				<div class="form-group form-group--textarea">
+					<textarea id="message" name="message" placeholder=" " ></textarea>
+					<label for="message" class="form-label">Кратнкое описание задачи</label>
+				</div>
+			
+				<button class="btn btn-main section-form__btn" type="submit">
+					<img class="header__contacts-icon" src="./../assets/vector/phone.svg" alt="Заказать звонок, Стальпром">
+					<span class="header__contacts-text">Заказать звонок</span>
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__row">
+				<div class="footer__col footer__col--left">
+					<div class="footer__col-block">
+						<div class="footer__item footer__item--main-phone">
+							<a href="tel:+79185443135 " class="footer__main-phone">+7 (918) 544-31-35 </a>
+							<span class="footer__text">Звоните прямо сейчас</span>
+						</div>
+						<div class="footer__item footer__item--contacts">
+							<div class="contacts-block">
+								<span class="contacts-block__label">Адрес</span>
+								<span class="footer__text">
+									г. Москва, ул. Тверская, д. 14, кв. 72
+								</span>
+							</div>
+						</div>
+						<div class="footer__item footer__item--contacts">
+							<div class="contacts-block">
+								<span class="contacts-block__label">Почта</span>
+								<span class="footer__text">
+									andreisheludko03@gmail.com
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer__col-block">
+						<a href="./" class="footer__logo">
+							<img src="./../assets/vector/logo-white.svg" alt="СтальПром">
+						</a>
+					</div>
+				</div>
+				<div class="footer__col footer__col--center">
+					<div class="footer__col-block">
+						<div class="footer__col-title">
+							<h2>Каталог</h2>
+						</div>
+						<ul class="footer__col-list">
+							<li><a href="./moiki.html" data-nav="moiki">Мойки</a></li>
+							<li><a href="./vanny.html" data-nav="vanny">Ванны с рабочей поверхностью</a></li>
+							<li><a href="./polki.html" data-nav="polki">Полки навесные</a></li>
+							<li><a href="./stellaji.html" data-nav="stellaji">Стеллажи</a></li>
+							<li><a href="./stoly.html" data-nav="stoly">Столы</a></li>
+							<li><a href="./shkafy-i-tumby.html" data-nav="shkafy-i-tumby">Шкафы и тумбы</a></li>
+							 
+							
+							<li><a href="./stanciia-barmena.html" data-nav="stanciia-barmena">Станция бармена</a></li>
+							
+						</ul>
+					</div>
+					<div class="footer__col-block">
+						<div class="footer__col-title">
+							<h2>Компания</h2>
+						</div>
+						<ul class="footer__col-list">
+							<li><a href="./about.html" data-nav="about">О нас</a></li>
+							<li><a href="./delivery.html" data-nav="delivery">Доставка и оплата</a></li>
+							<li><a href="./portfolio.html" data-nav="portfolio">Наши работы</a></li>
+							<li><a href="./contacts.html" data-nav="contacts">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__col footer__col--right">
+					<div class="footer__col-block">
+						<div class="footer__col-title descktop">
+							<h2>Мы в социальных сетях</h2>
+						</div>
+						<ul class="social-list">
+							<li>
+								<a href="#" class="tg">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_79_939)">
+											<path
+												d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+												fill="white" fill-opacity="0.1" />
+											<path
+												d="M24 0.5C36.9787 0.5 47.5 11.0213 47.5 24C47.5 36.9787 36.9787 47.5 24 47.5C11.0213 47.5 0.5 36.9787 0.5 24C0.5 11.0213 11.0213 0.5 24 0.5Z"
+												stroke="white" stroke-opacity="0.8" />
+											<path
+												d="M9.98851 23.7918C9.98851 23.7918 21.9885 18.867 26.1503 17.1328C27.7457 16.4392 33.1561 14.2195 33.1561 14.2195C33.1561 14.2195 35.6532 13.2485 35.4451 15.6068C35.3757 16.578 34.8208 19.9767 34.266 23.6531C33.4335 28.8554 32.5318 34.5432 32.5318 34.5432C32.5318 34.5432 32.3931 36.1386 31.2139 36.4161C30.0348 36.6935 28.0925 35.445 27.7457 35.1675C27.4682 34.9595 22.5434 31.838 20.7399 30.312C20.2544 29.8958 19.6995 29.0635 20.8092 28.0924C23.3064 25.8034 26.289 22.9595 28.0925 21.156C28.9249 20.3236 29.7572 18.3814 26.289 20.7397C21.3642 24.1386 16.5087 27.3294 16.5087 27.3294C16.5087 27.3294 15.3989 28.023 13.318 27.3987C11.237 26.7745 8.80925 25.9421 8.80925 25.9421C8.80925 25.9421 7.14461 24.9016 9.98851 23.7918Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_79_939">
+												<rect width="48" height="48" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="vk">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_79_942)">
+											<path
+												d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+												fill="white" fill-opacity="0.1" />
+											<path
+												d="M24 0.5C36.9787 0.5 47.5 11.0213 47.5 24C47.5 36.9787 36.9787 47.5 24 47.5C11.0213 47.5 0.5 36.9787 0.5 24C0.5 11.0213 11.0213 0.5 24 0.5Z"
+												stroke="white" stroke-opacity="0.8" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M11 16.0128C11.2078 26.0048 16.2727 32 25.1558 32H25.6754V26.2865C28.9351 26.6068 31.4027 28.964 32.3895 32H37C36.5272 30.2749 35.6888 28.6681 34.5404 27.2857C33.392 25.9036 31.9596 24.7772 30.3377 23.9807C31.7911 23.1077 33.0464 21.9483 34.0251 20.5752C35.0038 19.202 35.6851 17.6445 36.026 16H31.8441C30.9351 19.1769 28.2338 22.0592 25.6754 22.3282V16.0128H21.4805V27.0809C18.8831 26.4402 15.6104 23.3402 15.4675 16.0128H11Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_79_942">
+												<rect width="48" height="48" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col-block">
+						<div class="footer__col-btn">
+							<button class="btn btn-white" type="button" data-popup="message">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4 16.0001V20.0001L8 20.0001L18.8686 9.13146L18.8695 9.13061C19.265 8.73516 19.4628 8.53736 19.5369 8.3092C19.6021 8.10835 19.6022 7.89201 19.5369 7.69117C19.4627 7.46284 19.2646 7.26474 18.8686 6.86872L17.1288 5.12892C16.7345 4.7346 16.5369 4.53704 16.3091 4.46301C16.1082 4.39775 15.8919 4.39775 15.691 4.46301C15.463 4.53709 15.2652 4.73488 14.8704 5.12976L14.8686 5.13146L4 16.0001Z"
+											stroke="#1A60B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Написать нам</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__row footer__row--bottom">
+			<div class="footer__col">
+				<p class="footer__text">
+					&copy; СтальПром, 2026. Все права защищены.
+					<span class="footer__text">
+						Сайт разработан: <a href="https://rocket-ads.ru" target="_blank" rel="noopener">RocketADS🚀</a>
+					</span>
+				</p>
+			</div>
+			<div class="footer__col">
+				<a href="#" class="policy">
+					<span class="footer__text">Политика конфиденциальности</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="bottom-menu">
+	<div class="bottom-menu__wrapper">
+		<a href="#" class="bottom-menu__link">
+			<span class="favor hide-title bottom-menu__link-text">Избранное</span>
+			<span class="btn-round btn-cart bottom-menu__link-icon">
+				<img src="./../assets/vector/star.svg" alt="избранное">
+				<span class="btn-cart__count">1</span>
+			</span>
+		</a>
+		<a href="./cart.html" class="bottom-menu__link">
+			<span class="header__cart-summa bottom-menu__link-text">
+				<span class="digit">140 000</span>
+				<span class="valuta">₽</span>
+			</span>
+			<span class="btn-round btn-cart bottom-menu__link-icon">
+				<img src="./../assets/vector/cart.svg" alt="корзина">
+				<span class="btn-cart__count">1</span>
+			</span>
+		</a>
+		<a href="./account.html" class="bottom-menu__link">
+			<span class="user bottom-menu__link-text">Вход</span>
+			<span class="btn-round btn-cart bottom-menu__link-icon ">
+				<img src="./../assets/vector/user.svg" alt="пользователь">
+			</span>
+		</a>
+	</div>
+</div>
+		</div>
+	</div>
+	<div class="mob-menu">
+	<div class="mob-menu__wrapper">
+		<div class="mob-menu__container">
+			<div class="mob-menu__header">
+				<a href="#" class="mob-menu__geo">
+					<img class="mob-menu__geo-icon" src="./../assets/vector/mark.svg" alt="город">
+					<span class="mob-menu__geo-text">Москва</span>
+				</a>
+				<div class="mob-menu__close">
+					<div class="mob-menu__close-line"></div>
+					<div class="mob-menu__close-line"></div>
+				</div>
+			</div>
+			<div class="mob-menu__content">
+				<form action="#" class="form-search mob-menu__form">
+					<input type="text" id="mob-search-input" placeholder="Поиск по сайту">
+				</form>
+				<ul class="mob-menu__list">
+					<li class="mob-menu__item"><a href="./" class="mob-menu__link" data-nav="home">Главная</a></li>
+					<li class="mob-menu__item"><a href="./catalog.html" class="mob-menu__link" data-nav="catalog">Каталог</a></li>
+					<li class="mob-menu__item"><a href="./about.html" class="mob-menu__link" data-nav="about">О нас</a></li>
+					<li class="mob-menu__item"><a href="./delivery.html" class="mob-menu__link" data-nav="delivery">Доставка и оплата</a></li>
+					<li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link" data-nav="portfolio">Оборудование</a></li>
+					<li class="mob-menu__item"><a href="./contacts.html" class="mob-menu__link" data-nav="contacts">Контакты</a></li>
+				</ul>
+		</div>
+		<div class="mob-menu__footer">
+			<a href="tel:+79185443135" class="mob-menu__contacts">
+				<img class="mob-menu__contacts-icon" src="./../assets/vector/phone.svg" alt="телефон Стальпром">
+				<span class="mob-menu__contacts-text">+7 (918) 544-31-35</span>
+			</a>
+			<a href="mailto:andreisheludko03@gmail.com" class="mob-menu__contacts">
+				<img class="mob-menu__contacts-icon" src="./../assets/vector/mail.svg" alt="почта Стальпром">
+				<span class="mob-menu__contacts-text">andreisheludko03@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</div>
+	<div class="popup-overlay" aria-hidden="true">
+	<div class="popup">
+		<button type="button" class="popup__close" aria-label="Закрыть">
+			<!-- SVG крестика -->
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M5 5L15 15M5 15L15 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+			</svg>
+		</button>
+		<div class="popup__content"></div>
+	</div>
+</div>
+	<!-- Скрытые шаблоны попапов -->
+<div class="popup-templates" aria-hidden="true" style="display: none;">
+
+	<div id="popup-template-callback">
+		<h2 class="popup__title">Заказать обратный звонок</h2>
+		<form class="popup__form popup-callback-form" novalidate>
+			<div class="popup__field-group">
+				<div class="popup__field">
+					<input type="text" name="username" id="username" placeholder=" "">
+					<label for="username" class="popup__form-label">Ваше имя</label>
+				</div>
+				<div class="popup__field">
+					<input type="tel" name="userphone" id="userphone" placeholder=" "">
+					<label for=" userphone" class="popup__form-label">Ваш телефон</label>
+				</div>
+				<div class="popup__field">
+					<textarea name="usermessage" id="usermessage" placeholder=" " rows="4"></textarea>
+					<label for="usermessage" class="popup__form-label">Краткое описание задачи</label>
+				</div>
+			</div>
+			<div class="popup__field-group">
+				<div class="popup__field">
+					<div class="checkbox">
+						<div class="checkbox__wrapper">
+							<input type="checkbox" id="user-agreement" name="user-agreement" required checked />
+							<label class="checkbox__label" for="user-agreement">
+								Я согласен на
+								<a href="./licenses_detail.html" target="_blank">
+									обработку персональных данных
+								</a>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="popup__field">
+					<button type="button" class="btn btn-main popup__btn">Перезвоните мне</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div id="popup-template-message">
+		<h2 class="popup__title">Написать сообщение</h2>
+		<form class="popup__form popup-message-form" novalidate>
+			<div class="popup__field-group">
+				<div class="popup__field">
+					<input type="text" name="username" id="username" placeholder=" "">
+						<label for=" username" class="popup__form-label">Ваше имя</label>
+				</div>
+				<div class="popup__field">
+					<input type="tel" name="userphone" id="userphone" placeholder=" "">
+						<label for=" userphone" class="popup__form-label">Ваш телефон</label>
+				</div>
+				<div class="popup__field">
+					<input type="email" name="usermail" id="usermail" placeholder=" "">
+					<label for=" usermail" class="popup__form-label">Ваш E-mail</label>
+				</div>
+				<div class="popup__field">
+					<input type="text" name="userorganisation" id="userorganisation" placeholder=" "">
+					<label for=" userorganisation" class="popup__form-label">Ваше предприятие</label>
+				</div>
+				<div class="popup__field">
+					<textarea name="usermessage" id="usermessage" placeholder=" " rows="4"></textarea>
+					<label for="usermessage" class="popup__form-label">Ваше сообщение</label>
+				</div>
+			</div>
+			<div class="popup__field-group">
+				<div class="popup__field">
+					<div class="checkbox">
+						<div class="checkbox__wrapper">
+							<input type="checkbox" id="user-agreement" name="user-agreement" required checked />
+							<label class="checkbox__label" for="user-agreement">
+								Я согласен на
+								<a href="./licenses_detail.html" target="_blank">
+									обработку персональных данных
+								</a>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="popup__field">
+					<button type="button" class="btn btn-main popup__btn">Отправить</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- Сюда позже добавим другие шаблоны -->
+
+</div>
+
+	<script src="./js/checkout.min.js?_v=20260114202553" defer></script>
+
+</body>
+</html>
